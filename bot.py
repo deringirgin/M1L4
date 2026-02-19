@@ -25,8 +25,8 @@ async def add(ctx, left: int, right: int):
     await ctx.send(left + right)
 
 @bot.command()
-async def voice(ctx) :
-    await ctx.send("A-a-aşkım, çok pardon-don  Ben düştüm balkondan-dan   Çok iyi popon-pon  Vurdum ben de bom-bom  Tofaş Doğan SLX   Esmeri çok severiz  Hayır, hayır, hayır, bi' yanlışlık var  Sarılara biterizLvbel C5 iyi ki var  Baba harbi çok kibar")
+async def wow(ctx) :
+    await ctx.send("Tofaş Doğan SLX   Esmeri çok severiz  Hayır, hayır, hayır, bi' yanlışlık var  Sarılara biteriz Lvbel C5 iyi ki var ")
 
 
 bot.run(TOKEN)
