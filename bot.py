@@ -26,7 +26,7 @@ async def add(ctx, left: int, right: int):
 
 @bot.command()
 async def wow(ctx) :
-    await ctx.send("Tofaş Doğan SLX   Esmeri çok severiz  Hayır, hayır, hayır, bi' yanlışlık var  Sarılara biteriz Lvbel C5 iyi ki var ")
+    await ctx.send(f"Tofaş Doğan SLX   Esmeri çok severiz  Hayır, hayır, hayır, bi' yanlışlık var  Sarılara biteriz Lvbel C5 iyi ki var ")
 
 
 bot.run(TOKEN)
