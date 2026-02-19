@@ -24,5 +24,9 @@ async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
 
+@bot.command()
+async def voice(ctx) :
+    await ctx.send("A-a-aşkım, çok pardon-don  Ben düştüm balkondan-dan   Çok iyi popon-pon  Vurdum ben de bom-bom  Tofaş Doğan SLX   Esmeri çok severiz  Hayır, hayır, hayır, bi' yanlışlık var  Sarılara biterizLvbel C5 iyi ki var  Baba harbi çok kibar")
+
 
 bot.run(TOKEN)
