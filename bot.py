@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from config import TOKEN 
+import random
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -25,8 +26,17 @@ async def add(ctx, left: int, right: int):
     await ctx.send(left + right)
 
 @bot.command()
-async def wow(ctx) :
-    print("lvbel C5")
+async def roll(ctx, dice: str):
+    """Rolls a dice in NdN format."""
+    try:
+        rolls, limit = map(int, dice.split('d'))
+    except Exception:
+        await ctx.send('Format has to be in NdN!')
+        return
+
+    result = ', '.join(str(random.randint(1, limit)) for r in range(rolls))
+    await ctx.send(result)
+
 
 
 bot.run(TOKEN)
